@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Тренер по настольному теннису — Личные тренировки</title>
+<meta name="description" content=". Персональные тренировки по настольному теннису. Индивидуальные планы, техника удара, подача, тактика. Тренировки для начинающих и продвинутых." />
+<style>
+  :root{
+    --bg:#0f1724; --card:#0b1220; --accent:#f97316; --muted:#9ca3af; --glass: rgba(255,255,255,0.04);
+    --maxw:1000px;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue"; background:linear-gradient(180deg,#071029 0%, #081026 100%); color:#e6eef6; -webkit-font-smoothing:antialiased;}
+  header{position:sticky;top:0;background:linear-gradient(180deg, rgba(2,6,23,0.7), rgba(2,6,23,0.3));backdrop-filter: blur(6px); z-index:40;}
+  .container{max-width:var(--maxw);margin:0 auto;padding:20px;}
+  nav{display:flex;align-items:center;justify-content:space-between;gap:20px;}
+  .brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:inherit}
+  .brand svg{width:46px;height:46px;flex:0 0 46px}
+  .menu{display:flex;gap:16px}
+  .menu a{color:var(--muted);text-decoration:none;padding:8px 10px;border-radius:8px;}
+  .menu a:hover{color:#fff;background:var(--glass)}
+  .hero{display:grid;grid-template-columns:1fr 360px;gap:24px;align-items:center;padding:36px 0;}
+  .hero .text h1{margin:0 0 8px;font-size:28px}
+  .lead{color:var(--muted);line-height:1.5}
+  .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(2,6,23,0.6);}
+  .photo{width:100%;height:240px;border-radius:10px;object-fit:cover;background:#16324a;display:block}
+  /* Gallery */
+  .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:18px}
+  .gallery img, .gallery svg{width:100%;height:160px;object-fit:cover;border-radius:8px;background:#0b1220;display:block}
+  /* Responsive */
+  @media(max-width:900px){.hero{grid-template-columns:1fr;}.gallery{grid-template-columns:repeat(2,1fr)} .container{padding:12px} .menu{display:none}}
+  /* Contact form */
+  form{display:grid;gap:10px}
+  input, textarea{width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.06);background:transparent;color:inherit}
+  button{padding:10px 14px;border-radius:10px;border:0;background:linear-gradient(90deg, var(--accent), #f59e0b);color:#081026;font-weight:600;cursor:pointer}
+  footer{padding:18px 0;color:var(--muted);border-top:1px solid rgba(255,255,255,0.03);margin-top:30px}
+  .socials a{margin-right:10px;text-decoration:none;color:var(--muted)}
+  /* Smooth scroll target spacing */
+  section{padding-top:28px;padding-bottom:28px}
+  /* Simple grid for features */
+  .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  @media(max-width:600px){.grid-2{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <nav>
+      <a class="brand" href="#home">
+        <!-- Adaptive SVG logo (original graphic) -->
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <defs>
+            <linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#f97316"/><stop offset="1" stop-color="#f59e0b"/></linearGradient>
+          </defs>
+          <rect width="100" height="100" rx="18" fill="#07172a"/>
+          <path d="M25 60c8-6 30-20 50-10" stroke="url(#g)" stroke-width="6" stroke-linecap="round" fill="none"/>
+          <circle cx="28" cy="28" r="12" fill="url(#g)" />
+        </svg>
+        <div>
+          <div style="font-weight:700">Тренер по настольному теннису</div>
+          <div style="font-size:12px;color:var(--muted)">Личные тренировки в зале</div>
+        </div>
+      </a>
+      <div class="menu" role="navigation" aria-label="Главное меню">
+        <a href="#home">Главная</a>
+        <a href="#about">Обо мне</a>
+        <a href="#portfolio">Портфолио</a>
+        <a href="#contacts">Контакты</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main id="home" class="container">
+  <section class="hero">
+    <div class="text card">
+      <h1>Индивидуальные тренировки по настольному теннису</h1>
+      <p class="lead">Я провожу персональные занятия в зале — обучение технике ударов и подачи, тактика, игровая тренировка и работа над физической формой. Подходит как для начинающих, так и для опытных игроков, желающих повысить результат на турнирах.</p>
+      <div style="margin-top:12px" class="grid-2">
+        <div>
+          <strong>Формат занятий:</strong>
+          <ul style="margin:8px 0 0 18px;color:var(--muted)">
+            <li>Индивидуальные сессии 60/90 минут</li>
+            <li>План тренировок и домашние задания</li>
+            <li>Разбор видео и техника ударов</li>
+          </ul>
+        </div>
+        <div>
+          <strong>Место:</strong>
+          <p style="margin:8px 0 0;color:var(--muted)">Зал спортивного комплекса, г. Санкт-Петербург (адрес уточняйте при записи)</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Photo card: **IMPORTANT**: replace "photo.jpg" with your real photo (original). -->
+    <aside class="card">
+      <img class="photo" src="photo.jpg" alt="Мое фото" />
+      <p style="margin:10px 0 0;color:var(--muted);font-size:14px">Нажмите "Записаться" внизу, чтобы отправить мне сообщение или позвоните.</p>
+      <div style="display:flex;gap:8px;margin-top:12px">
+        <a href="tel:+79991234567" style="text-decoration:none;padding:8px 10px;border-radius:8px;background:rgba(255,255,255,0.03);color:inherit">📞 +7 (999) 123-45-67</a>
+        <a href="mailto:coach@example.com" style="text-decoration:none;padding:8px 10px;border-radius:8px;background:rgba(255,255,255,0.03);color:inherit">✉️ coach@example.com</a>
+      </div>
+    </aside>
+  </section>
+
+  <section id="about" class="card" aria-labelledby="about-title">
+    <h2 id="about-title">Обо мне</h2>
+    <p class="lead">Меня зовут Михаил, я тренер по настольному теннису с более чем 8 годами практики тренерской работы. Моя методика объединяет технические упражнения, тактические схемы и игровые ситуации. За время работы многие ученики повышали уровень и успешно выступали на городских турнирах.</p>
+    <p style="color:var(--muted);margin-top:8px"></p>
+  </section>
+
+  <section id="portfolio" class="card" aria-labelledby="portfolio-title">
+    <h2 id="portfolio-title">Портфолио / Галерея</h2>
+    <p style="color:var(--muted)">Ниже — примеры тренировочной работы, упражнения.</p>
+
+    <div class="gallery" role="list">
+      <!-- Original SVG adaptive graphic (counts as adaptive graphic) -->
+      
+      <figure role="listitem"><img src="p.WEBP" alt="p.WEBP"></figure>
+      <figure role="listitem"><img src="h.WEBP" alt="h.WEBP"></figure>
+      <figure role="listitem"><img src="o.WEBP" alt="o.WEBP"></figure>
+      <figure role="listitem"><img src="t.WEBP" alt="t.WEBP"></figure>
+	<figure role="listitem"><img src="o.WEBP" alt="o.WEBP"></figure>
+	<figure role="listitem"><img src="oo.WEBP" alt="oo.WEBP"></figure>
+    </div>
+  </section>
+
+  <section id="contacts" class="card" aria-labelledby="contacts-title">
+    <h2 id="contacts-title">Контакты / Запись</h2>
+    <p style="color:var(--muted)">Оставьте сообщение — я свяжусь для уточнения времени и места.</p>
+
+    <form id="contactForm" onsubmit="return handleSubmit(event)">
+      <label>Имя<input type="text" id="name" name="name" required placeholder="Ваше имя"></label>
+      <label>Email<input type="email" id="email" name="email" required placeholder="example@mail.ru"></label>
+      <label>Сообщение<textarea id="message" name="message" rows="4" required placeholder="Кратко опишите, какие цели и удобные дни/время"></textarea></label>
+      <div style="display:flex;gap:8px;align-items:center">
+        <button type="submit">Отправить</button>
+        <div style="color:var(--muted);font-size:13px">Или позвоните: <a href="tel:+79991234567">+7 (999) 123-45-67</a></div>
+      </div>
+      <div id="formResult" style="margin-top:8px;color:#9ae6b4"></div>
+    </form>
+
+    <script>
+      // Smooth scroll for internal links
+      document.querySelectorAll('a[href^="#"]').forEach(a=>{
+        a.addEventListener('click', function(e){
+          e.preventDefault();
+          const id = this.getAttribute('href').substring(1);
+          const el = document.getElementById(id);
+          if(el) el.scrollIntoView({behavior:'smooth', block:'start'});
+        });
+      });
+
+      function handleSubmit(e){
+        e.preventDefault();
+        const email = document.getElementById('email').value;
+        if(!email.includes('@')){
+          document.getElementById('formResult').textContent = 'Пожалуйста, укажите корректный email.';
+          return false;
+        }
+        // Basic client-side "sending" simulation
+        document.getElementById('formResult').textContent = 'Спасибо! Сообщение отправлено (локальная демонстрация).';
+        // In production: replace with XHR/fetch to server or form backend
+        return false;
+      }
+    </script>
+  </section>
+
+  <footer class="container">
+    <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+      <div>&copy; <span id="year"></span> Тренер по настольному теннису — Все права защищены</div>
+      <div class="socials">
+        <a href="https://vk.com/" target="_blank" rel="noopener">VK</a>
+        <a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+
+</body>
+</html>
